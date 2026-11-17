@@ -1,0 +1,315 @@
+/* ============================
+   style.css
+   ============================ */
+
+/* RESET & GLOBALS */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* STICKY NAVBAR */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e1e2f;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: #ffad00;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding-bottom: 0.25rem;
+  transition: border-bottom 0.3s ease;
+}
+
+a:hover {
+	border-bottom: 2px solid #ffad00;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+  transition: border-bottom 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  border-bottom: 2px solid #00c6ff;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("ai-isia-sfuocato-1024x724.webp") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; max-width: 650px; margin: auto; }
+
+/* GENERIC SECTION */
+section { padding: 60px 20px; 
+
+max-width: 1000px; /*limita la larghezza di ogni <section> a un massimo di 950 pixel.*/
+
+margin: auto; /*fa sì che, quando il browser è più largo di 950 px, lo spazio in eccesso venga equamente distribuito a sinistra e a destra, centrando il contenuto.*/
+}
+
+/* CARDS */
+.cards { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+
+.card {
+  background: #fff;
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: #00c6ff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover { background-color: #009ac6; }
+
+/* TIMELINE LAYOUT */
+.timeline article {
+  background: #fff;
+  padding: 1.75rem 2rem;
+  border-left: 4px solid #00c6ff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.galleria-affiancata {
+  display: flex;
+  gap: 20px; /* spazio tra le immagini */
+  flex-wrap: wrap; /* permette il wrap su schermi piccoli */
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.galleria-affiancata1 {
+  display: flex;
+  gap: 20px; /* spazio tra le immagini */
+  flex-wrap: wrap; /* permette il wrap su schermi piccoli */
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.img-affiancata {
+  width: 15%; /* 3 immagini affiancate con piccolo margine */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.img-affiancata1 {
+  width: 20%; /* 3 immagini affiancate con piccolo margine */
+  height: 150px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.immagine-articolo1 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.immagine-articolo2 {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.timeline article h2 { color: #00c6ff; margin-bottom: 0.5rem; }
+
+/* Tabella Timeline */
+.timeline-table { width: 50%; border-collapse: collapse; margin-top: 2rem; }
+.timeline-table th,
+.timeline-table td { border: 1px solid #ccc; padding: 0.75rem; text-align: left; }
+.timeline-table th { background-color: #00c6ff; color: #fff; }
+.timeline-table tr:nth-child(even) { background-color: #f1f9ff; }
+
+.contenitore-affiancato {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.contenitore-affiancato timeline-table {
+  flex: 1;
+}
+
+.contenitore-affiancato iframe {
+  flex: 1;
+  min-width: 400px;
+  height: 431px;
+  margin-top: 2rem; /*mi è servito per allinearmi alla tabella*/
+  border: 1px solid #ccc;
+  
+  
+}
+
+.tooltip-parola {
+  position: relative;
+  display: inline-block; /* importante: evita l'andare a capo */
+  cursor: help;
+  color: #0283ab;
+  text-decoration: underline;
+}
+
+
+
+.tooltip-box {
+  display: none;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  width: 220px;
+  text-align: center;
+}
+
+.tooltip-box img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.tooltip-descrizione {
+  display: inline-block;
+  font-size: 0.6em;
+  color: #333;
+}
+
+.tooltip-parola:hover .tooltip-box {
+  display: block;
+}
+
+.galleria-affiancata3 {
+  display: flex;
+  gap: 10px; /* spazio tra le immagini */
+  flex-wrap: wrap; /* permette il wrap su schermi piccoli */
+  justify-content: center;
+  margin: 15px 0;
+  
+}
+
+.galleria-affiancata4 {
+  display: flex;
+  gap: 10px; /* spazio tra le immagini */
+  flex-wrap: wrap; /* permette il wrap su schermi piccoli */
+  justify-content: center;
+  margin: 15px 0;
+  
+}
+
+.immagine-articolo3 {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  
+}
+
+.immagine-articolo4 {
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1e1e2f;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* FIXED SIDE IMAGES */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 260px;
+  height: 460px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 900; /* below navbar (1000) but above content */
+  pointer-events: none;
+}
+
+body::before { /* COMPUTER LEFT */
+  left: 0;
+  background-image: url("computer.png");
+}
+
+body::after { /* GUITAR RIGHT */
+  right: 0;
+  background-image: url("chitarra.png");
+}
+
+/* Hide side images when class applied */
+body.hide-sides::before,
+body.hide-sides::after { display: none; }
+
+/* RESPONSIVE – hide on narrow screens */
+@media (max-width: 1000px) {
+  body::before, body::after { display: none; }
+}

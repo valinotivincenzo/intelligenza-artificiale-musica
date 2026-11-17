@@ -1,0 +1,74 @@
+<!-- ai-musica.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI & Musica | Applicazioni</title>
+  <link rel="preload" href="computer.png" as="image">
+  <link rel="preload" href="chitarra.png" as="image">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai-musica.html" class="active">AI & Musica</a></li>
+        <li><a href="storia-ai.html">Storia dell'AI</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Applicazioni dell'Intelligenza Artificiale nella Musica</h1>
+
+    <section class="timeline">
+      <article>
+        <h2>Composizione Generativa</h2>
+        <p>I modelli di deep learning – dalle RNN ai Transformer fino alle reti di diffusione – generano melodie, armonie e orchestrazioni partendo da brevi spunti o <em>prompt</em> testuali.</p>
+        <ul>
+          <li><strong>Jukebox (OpenAI)</strong> produce brani completi con voci cantate.</li>
+          <li><strong>Suno</strong> trasforma prompt in canzoni pop radio‑ready.</li>
+          <li><strong>Musenet</strong> fonde stili diversi (es. Mozart + The Beatles).</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Produzione &amp; Mixing</h2>
+        <p>Plugin come <strong>iZotope Ozone</strong> e <strong>Neutron</strong> analizzano la traccia e suggeriscono chain di effetti mirate per raggiungere un suono professionale in pochi click.</p>
+        <ul>
+          <li>Bilanciamento automatico di volume e panorama.</li>
+          <li>Riconoscimento degli strumenti per EQ mirate.</li>
+          <li>Mastering assistito basato su reference track.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Personalizzazione dell'Ascolto</h2>
+        <p>Le piattaforme di streaming (Spotify, Apple Music) impiegano reti neurali e clustering per creare <em>Daily Mix</em> e playlist su misura.</p>
+        <ul>
+          <li>Collaborative filtering in tempo reale.</li>
+          <li>Analisi di mood ed energia del brano.</li>
+          <li>Predizioni dei <em>skip</em> per ottimizzare la discovery.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Performance Live &amp; Strumenti Interattivi</h2>
+        <p>Software come <strong>Magenta Studio</strong> e <strong>Ableton Live</strong> integrano modelli AI che reagiscono all'improvvisazione dei musicisti, generando accompagnamenti sincronizzati in tempo reale.</p>
+      </article>
+
+      <article>
+        <h2>Didattica e Apprendimento</h2>
+        <p>Piattaforme educative basate su AI analizzano l'intonazione e il timing di chi studia uno strumento, offrendo feedback personalizzato e percorsi su misura.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AI & Musica. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+</html>
